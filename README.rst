@@ -110,7 +110,7 @@ The steps below will get you up and running with a local development environment
 
 * pip
 * virtualenv
-* PostgreSQL
+* MySQL
 
 First make sure to create and activate a virtualenv_, then open a terminal at the project root and install the requirements for local development::
 
@@ -118,7 +118,7 @@ First make sure to create and activate a virtualenv_, then open a terminal at th
 
 .. _virtualenv: http://docs.python-guide.org/en/latest/dev/virtualenvs/
 
-Then, create a PostgreSQL database and add the database configuration using the  ``dj-database-url`` app pattern: ``postgres://db_owner:password@dbserver_ip:port/db_name`` either:
+Then, create a MySQL database and add the database configuration using the  ``dj-database-url`` app pattern: ``mysql://db_owner:password@dbserver_ip:port/db_name`` either:
 
 * in the ``config.common.py`` setting file,
 * or in the env variable ``DATABASE_URL``
