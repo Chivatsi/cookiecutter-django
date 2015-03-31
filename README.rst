@@ -62,7 +62,7 @@ First, get cookiecutter. Trust me, it's awesome::
 
 Now run it against this repo::
 
-    $ cookiecutter https://github.com/pydanny/cookiecutter-django.git
+    $ cookiecutter https://github.com/savioabuga/cookiecutter-django.git
 
 You'll be prompted for some questions, answer them, then it will create a Django project for you.
 
@@ -110,7 +110,7 @@ The steps below will get you up and running with a local development environment
 
 * pip
 * virtualenv
-* PostgreSQL
+* MySQL
 
 First make sure to create and activate a virtualenv_, then open a terminal at the project root and install the requirements for local development::
 
@@ -118,7 +118,7 @@ First make sure to create and activate a virtualenv_, then open a terminal at th
 
 .. _virtualenv: http://docs.python-guide.org/en/latest/dev/virtualenvs/
 
-Then, create a PostgreSQL database and add the database configuration using the  ``dj-database-url`` app pattern: ``postgres://db_owner:password@dbserver_ip:port/db_name`` either:
+Then, create a MySQL database and add the database configuration using the  ``dj-database-url`` app pattern: ``mysql://db_owner:password@dbserver_ip:port/db_name`` either:
 
 * in the ``config.common.py`` setting file,
 * or in the env variable ``DATABASE_URL``
